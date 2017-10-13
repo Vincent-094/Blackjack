@@ -1,15 +1,8 @@
-##########################
-# Lab 06 Blackjack
-# Vincent Trinh
-# csA131
-# 10/9/17
-#########################
-
 
 import random
 def main():
   print('***********************************')
-  print('** Welcome to CS A131 BlackJack! **')
+  print('** Welcome to BlackJack! **')
   print('***********************************')
 
 
