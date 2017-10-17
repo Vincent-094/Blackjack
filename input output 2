@@ -1,0 +1,32 @@
+def main():
+    open_input = open('input.txt','r')
+    open_output = open('output.txt','w')
+    
+    #do i need to initialize 'last' outside of the loop?
+    
+    while last != ' ':
+        last = open_input.readline() #need to change this. it's reading this line twice. move to end of loop?
+        first = open_input.readline()
+        salary = open_input.readline()
+        percent = open_input.readline()
+   
+        last = last.rstrip('\n')
+        first = first.rstrip('\n')
+        salary = salary.rstrip('\n')
+        percent = percent.rstrip('\n')
+        
+        #check if output is correct
+        print(last) 
+        print(first)
+        print(salary)
+        print(percent)
+        
+        #updated = float(salary)*float((float(percent)*.01)+1.0)
+        #print(updated)
+        #open_output.write('%s     %s     %.2f' % (first, last, updated))
+
+    
+    open_input.close()
+    open_output.close()
+
+main()
