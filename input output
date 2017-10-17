@@ -1,0 +1,30 @@
+def main():
+    open_input = open('input.txt','r')
+    open_output = open('output.txt','w')
+    
+    
+    for line in open_input:
+        last = open_input.readline()
+        first = open_input.readline()
+        salary = open_input.readline()
+        percent = open_input.readline()
+   
+        last = last.rstrip('\n')
+        first = first.rstrip('\n')
+        salary = salary.rstrip('\n')
+        percent = percent.rstrip('\n')
+        
+        print(last) 
+        print(first)
+        print(salary)
+        print(percent)
+        
+        #updated = float(salary)*float((float(percent)*.01)+1.0)
+        #print(updated)
+        #open_output.write('%s     %s     %.2f' % (first, last, updated))
+
+    
+    open_input.close()
+    open_output.close()
+
+main()
